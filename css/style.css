@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orange-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradientes do background */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /* Gradientes do circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--Pale-blue);
+}
+
+.main {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 110vh;
+  height: 75vh;
+  position: relative;
+  top: 10vh;
+  background-color: var(--White);
+  border-radius: 20px;
+}
+
+/* Card da esquerda */
+
+.card-left {
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+}
+
+.title-result {
+  position: relative;
+  bottom: 50px;
+  padding: 10px 0px 20px 0px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Light-lavender);
+}
+
+span {
+  position: relative;
+  bottom: 30px;
+  color: var(--White);
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+h1 {
+  color: var(--White);
+  padding-top: 70px;
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.of-100 {
+  color: var(--Light-lavender);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.great {
+  color: var(--White);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+.paragraphy {
+  color: var(--Light-lavender);
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 20px 120px 0px 120px;
+  text-align: center;
+}
+
+/* Card da direita */
+
+
+.summary {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 50%;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  bottom: 2vh;
+  gap: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 {
+  margin-top: 30px;
+}
+
+.card .reaction {
+  color: var(--Light-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px 0px 15px 0px;
+  width: 40vh;
+  text-align: start;
+  background-color: hsla(0, 100%, 67%, 0.05);
+  border-radius: 15px;
+}
+
+.card .reaction img {
+  position: relative;
+  top: 3px;
+  width: 50px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.card .memory {
+  color: var(--Orange-yellow);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px 0px 15px 0px;
+  width: 40vh;
+  text-align: start;
+  background-color: hsla(39, 100%, 56%, 0.05);
+  border-radius: 15px;
+}
+
+.card .memory img {
+  position: relative;
+  top: 3px;
+  width: 50px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.card .verbal {
+  color: var(--Light-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px 0px 15px 0px;
+  width: 40vh;
+  text-align: start;
+  background-color: hsla(166, 100%, 37%, 0.05);
+  border-radius: 15px;
+}
+
+.card .verbal img {
+  position: relative;
+  top: 3px;
+  width: 50px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.card .visual {
+  color: var(--Light-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px 0px 15px 0px;
+  width: 40vh;
+  text-align: start;
+  background-color: hsla(234, 85%, 45%, 0.05);
+  border-radius: 15px;
+}
+
+.card .visual img {
+  position: relative;
+  top: 3px;
+  width: 50px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.label1 {
+  margin-right: 20px;
+  float: right;
+  color: black;
+}
+
+.label2 {
+  color: var(--Light-lavender);
+}
+
+input {
+  position: relative;
+  padding: 20px 20px;
+  width: 40vh;
+  margin-top: 40px;
+  margin-right: 2px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
+}
+
+@media  screen and (max-width: 375px){
+  .main {
+    margin: 0;
+    width: 35vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+  }
+  .card-left {
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    background-color: var(--White);
+  }
+
+  .card {
+    width: 100%;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .title-result {
+    position: relative;
+    top: 110px;
+    padding: 10px 0px 40px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+  }
+  span {
+    position: relative;
+    text-align: center;
+    top: 90px;
+    width: 20vh;
+    height: 20vh;
+  }
+
+  h1 {
+    color: var(--White);
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .of-100 {
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .great {
+    position: relative;
+    top: 90px;
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 500;
+
+  }
+
+  .paragraphy {
+    position: relative;
+    top: 30px;
+    color: var(--Light-lavender);
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 50px 20px 70px 20px;
+    text-align: center;
+  }
+  
+
+
+
+  .summary {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    margin-right: 60%;
+    margin-bottom: 40px;
+    top: 40px;
+  }
+  
+  #cards {
+    width: 35vh;
+    position: relative;
+    bottom: 10px;
+  }
+
+  input {
+    position: relative;
+    padding: 20px 20px;
+    width: 30vh;
+  }
+}
