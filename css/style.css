@@ -339,3 +339,98 @@ input {
     width: 30vh;
   }
 }
+
+@media screen and (max-width: 1368px) {
+  .main {
+    margin: auto;
+    width: 200vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--White);
+  }
+
+  .card-left {
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--White);
+  }
+
+  .card {
+    width: 100%;
+    gap: 0;
+  }
+
+  .title-result {
+    position: relative;
+    top: 0px;
+    padding: 10px 0px 40px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+  }
+
+  .span {
+    position: relative;
+    text-align: center;
+    top: 0px;
+    width: 20vh;
+    height: 20vh;
+  }
+
+  h1 {
+    color: var(--White);
+    padding-top: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .of-100 {
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .great {
+    position: relative;
+    top: 10px;
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 500;
+
+  }
+
+  .paragraphy {
+    position: relative;
+    top: 0px;
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+  }
+
+  .summary {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    margin-right: 60%;
+    margin-bottom: 0px;
+    top: 20px;
+  }
+
+  #cards {
+    width: 50vh;
+    position: relative;
+    top: 30px;
+    padding : 10px 0px 10px 0px;
+  }
+
+  input {
+    position: ;
+    padding: 10px 10px;
+    width: 50vh;
+  }
+}
