@@ -71,7 +71,7 @@ body {
   color: var(--Light-lavender);
 }
 
-span {
+.span {
   position: relative;
   bottom: 30px;
   color: var(--White);
@@ -273,7 +273,7 @@ input {
     font-weight: 700;
     color: var(--Light-lavender);
   }
-  span {
+  .span {
     position: relative;
     text-align: center;
     top: 90px;
